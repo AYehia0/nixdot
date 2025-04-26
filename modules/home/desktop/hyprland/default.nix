@@ -137,7 +137,7 @@
 
         # Hypr
         "CTRL ALT, delete, exit,"
-        "$mainMod, SHIFT, W, togglefloating,"
+        "$mainMod SHIFT, W, togglefloating,"
         "$mainMod, P, pseudo,"
         "$mainMod, U, togglesplit,"
 
