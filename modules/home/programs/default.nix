@@ -4,6 +4,7 @@
     ./common.nix
     ./direnv.nix
     ./git.nix
+    ./gh.nix
     ./imv.nix
     ./media.nix
     ./mpv.nix
