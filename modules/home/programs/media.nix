@@ -4,6 +4,7 @@
     enable = true;
     plugins = with pkgs.obs-studio-plugins; [
       obs-vaapi
+      obs-backgroundremoval
     ];
   };
 

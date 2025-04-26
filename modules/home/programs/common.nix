@@ -18,6 +18,7 @@
 
     # dev
     gcc
+    gnumake
     go
     nodejs_23
     python3
