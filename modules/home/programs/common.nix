@@ -21,6 +21,7 @@
     go
     nodejs_23
     python3
+    python312Packages.pip
     lua
     lazygit
     lazydocker
