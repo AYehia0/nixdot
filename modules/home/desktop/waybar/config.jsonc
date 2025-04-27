@@ -7,8 +7,8 @@
     "gtk-layer-shell": true,
     "height": 30,
     "modules-left": ["hyprland/workspaces"],
-    "modules-center": ["mpris"],
-    "modules-right": ["battery", "backlight", "cpu", "memory", "pulseaudio","pulseaudio#microphone", "clock", "tray"],
+    "modules-center": ["mpd"],
+    "modules-right": ["custom/prayer", "battery", "backlight", "cpu", "memory", "pulseaudio","pulseaudio#microphone", "clock", "tray"],
     "hyprland/window": {
         "format": "{}"
     },
@@ -129,14 +129,12 @@
       "player-icons": {
         "default": "▶",
         "mpv": "🎵",
-        "spotify": " ",
-        "spotify-player": " ",
-        "firefox": "",
+        "firefox": ""
       },
       "status-icons": {
         "paused": ""
       },
-      "ignored-players": ["librewolf", "vlc", "firefox", "brave"]
+      "ignored-players": ["vlc", "mpv"]
     },
      
     "mpd": {
@@ -164,5 +162,11 @@
       "tooltip-format-disconnected": "MPD (disconnected)"
     },
 
-    
+    // custom scripts
+    "custom/prayer": {
+        "exec": "~/.config/waybar/prayer.sh",
+        "interval": 60,
+        "escape" : true,
+        "format": "󰃰  {}"
+    }
 }
