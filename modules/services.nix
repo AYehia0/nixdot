@@ -8,7 +8,7 @@
       alsa.enable = true;
       alsa.support32Bit = true;
       jack.enable = true;
-      wireplumber = true;
+      wireplumber.enable = true;
     };
     gvfs.enable = true;
     blueman.enable = true;
