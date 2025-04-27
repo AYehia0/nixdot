@@ -9,7 +9,8 @@
         "networkmanager"
         "wheel"
         "docker"
-        "vidoe"
+        "video"
+        "input"
       ];
       shell = pkgs.zsh;
       packages = with pkgs; [ ];
