@@ -5,7 +5,7 @@
       global = {
         width = "250";
         height = "(75,150)";
-        origin = "bottom-right";
+        origin = "top-right";
         offset = "(30, 30)";
         alignment = "center";
         notification_limit = 20;
@@ -17,7 +17,7 @@
         corner_radius = 5;
         frame_width = 0;
         gap_size = 1;
-        font = "Iosevka Nerd Font 9";
+        font = "Iosevka Nerd Font 10";
         format = "<b>%s</b>\n%b";
         enable_recursive_icon_lookup = true;
         min_icon_size = 32;
