@@ -12,7 +12,7 @@
     (discord.override {
       withVencord = true;
     })
-    obsidian
+    appflowy
     kdePackages.kdenlive
     qbittorrent
     vlc
