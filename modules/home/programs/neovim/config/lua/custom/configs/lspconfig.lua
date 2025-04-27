@@ -42,7 +42,7 @@ lspconfig.eslint.setup {
 }
 
 -- Typescript LSP configs
-lspconfig.tsserver.setup {
+lspconfig.ts_ls.setup {
   on_attach = on_attach,
   capabilities = cap,
   init_options = {

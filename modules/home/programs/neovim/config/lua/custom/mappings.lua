@@ -4,6 +4,8 @@ M.general = {
   n = {
     ["<leader>i"] = { "<cmd> :%s/^\\s*/&&/<CR>", "Convert tabs to 4 (Increase tabs by 2)" },
 
+    -- Lazygit shortcut
+    ["<leader>gg"] = { "<cmd> LazyGit <CR>", "Lazygit" },
     ["<C-h>"] = { "<cmd> TmuxNavigateLeft<CR>", "window left" },
     ["<C-l>"] = { "<cmd> TmuxNavigateRight<CR>", "window right" },
     ["<C-j>"] = { "<cmd> TmuxNavigateDown<CR>", "window down" },
