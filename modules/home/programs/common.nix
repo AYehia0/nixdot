@@ -3,8 +3,8 @@
   home.packages = with pkgs; [
     # packages that don't need configuration
 
-    # themes
-    nwg-look
+    # social
+    telegram-desktop
 
     # files
     xfce.thunar

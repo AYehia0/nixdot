@@ -135,11 +135,15 @@
         # Apps
         "$mainMod, X, exec, $terminal"
         "$mainMod, B, exec, $browser"
+        "$mainMod, D, exec, discord"
+        "$mainMod, T, exec, telegram-desktop"
+
         ## Files
         "$mainMod, F, exec, $guiFM"
         "$mainMod SHIFT, E, exec, $terminal -e $tuiFM"
 
         # Utils
+        "$mainMod SHIFT, P, exec, $terminal -e rmpc"
         "$mainMod, M , exec, pamixer --default-source -t" # mute mic
         "$mainMod SHIFT, M , exec, pamixer -t" # mute sound
 
