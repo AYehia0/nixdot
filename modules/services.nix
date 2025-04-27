@@ -1,14 +1,16 @@
 { pkgs, ... }:
 {
+  security.rtkit.enable = true;
   services = {
     pipewire = {
       enable = true;
+      pulse.enable = true;
       alsa.enable = true;
       alsa.support32Bit = true;
-      pulse.enable = true;
       jack.enable = true;
-      wireplumber.enable = true;
+      wireplumber = true;
     };
     gvfs.enable = true;
+    blueman.enable = true;
   };
 }
