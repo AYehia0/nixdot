@@ -166,10 +166,10 @@
         "$mainMod SHIFT, j, movewindow, d"
 
         # Resize Windows
-        "ALT, l, resizeactive, 30 0"
-        "ALT, h, resizeactive, -30 0"
-        "ALT, k, resizeactive, 0 -30"
-        "ALT, j, resizeactive, 0 30"
+        "$mainMod CTRL, l, resizeactive, 30 0"
+        "$mainMod CTRL, h, resizeactive, -30 0"
+        "$mainMod CTRL, k, resizeactive, 0 -30"
+        "$mainMod CTRL, j, resizeactive, 0 30"
 
         # Workspace switching
         "$mainMod, 1, workspace, 1"
@@ -205,7 +205,7 @@
         ",XF86AudioLowerVolume,exec,wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
         ",XF86AudioMute, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
 
-       # Workspace scroll
+        # Workspace scroll
         "$mainMod, mouse_down, workspace, e+1"
         "$mainMod, mouse_up, workspace, e-1"
       ];
