@@ -21,6 +21,7 @@
     gnumake
     go
     nodejs_23
+    yarn
     python3
     python312Packages.pip
     lua
