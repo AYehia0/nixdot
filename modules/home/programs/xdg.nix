@@ -1,6 +1,15 @@
+{ pkgs, ... }:
 {
   xdg = {
     enable = true;
+    portal = {
+      extraPortals = [ pkgs.xdg-desktop-portal-gtk pkgs.xdg-desktop-portal-hyprland  pkgs.xdg-desktop-portal-wlr ];
+      config = {
+        common.default = "gtk";
+        pantheon.default = "gtk";
+        gtk.default = "gtk";
+      };
+    };
 
     userDirs = {
       enable = true;

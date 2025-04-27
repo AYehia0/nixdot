@@ -1,6 +1,11 @@
-{ pkgs, ... }:
+{ pkgs, config, ... }:
 {
   imports = [ ./hyprpaper.nix ];
+
+  home.file.".config/hypr/portal-hyprland.sh" = {
+    source = ./scripts/portal-hyprland.sh;
+    executable = true;
+  };
 
   wayland.windowManager.hyprland = {
     enable = true;
@@ -43,6 +48,9 @@
       exec-once = [
         "waybar"
         "mpdscribble"
+        "systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
+        "dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
+        "${config.home.homeDirectory}/.config/hypr/portal-hyprland.sh"
       ];
 
       monitor = [ "eDP-1,preferred,auto,1" "monitor=HDMI-A-1@144,preferred,auto,1" ];
